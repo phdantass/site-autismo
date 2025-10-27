@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursos e Apoio – Neuroviva</title>
+  <title>Recursos & Apoio – Neuroviva</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -26,68 +27,313 @@
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
+  <!-- Banner Interno -->
+  <section class="banner-interno">
+    <div class="container">
+      <h1>Recursos & Apoio</h1>
+      <p>Ferramentas, instituições e direitos para pessoas autistas e suas famílias</p>
+    </div>
+  </section>
+
   <main class="conteudo-pagina">
-    <section class="introducao">
-      <h2>Recursos e Apoio para Pessoas com TEA</h2>
-      <p>
-        Buscar informação e apoio é um passo fundamental para garantir o bem-estar das 
-        pessoas autistas e de suas famílias. Nesta página, reunimos materiais, 
-        instituições e leis que ajudam a promover a inclusão e o respeito à diversidade.
-      </p>
+    <!-- Recursos por Categoria -->
+    <section class="categorias-recursos">
+      <div class="container">
+        <h2>Recursos por Categoria</h2>
+        <div class="categorias-grid">
+          <div class="categoria-card">
+            <div class="categoria-icon">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <h3>Direitos Legais</h3>
+            <p>Leis, benefícios e garantias</p>
+            <a href="#legais" class="botao pequeno">Ver recursos</a>
+          </div>
 
-      <img src="https://img.freepik.com/fotos-premium/representando-a-conscientizacao-sobre-o-autismo-e-o-apoio-familiar-no-dia-mundial-de-conscientizacao-sobre-o-autismo-uma-imagem-retrata-um-anuncio_908985-100764.jpg" 
-           alt="Mãos de pessoas unidas em sinal de apoio">
+          <div class="categoria-card">
+            <div class="categoria-icon">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <h3>Saúde</h3>
+            <p>Profissionais e tratamentos</p>
+            <a href="#saude" class="botao pequeno">Ver recursos</a>
+          </div>
+
+          <div class="categoria-card">
+            <div class="categoria-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Educação</h3>
+            <p>Escolas e materiais didáticos</p>
+            <a href="#educacao" class="botao pequeno">Ver recursos</a>
+          </div>
+
+          <div class="categoria-card">
+            <div class="categoria-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Apoio Social</h3>
+            <p>Associações e grupos de apoio</p>
+            <a href="#apoio" class="botao pequeno">Ver recursos</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="apoio">
-      <h3>Instituições e Associações</h3>
-      <ul>
-        <li><strong><a href="https://ama.org.br" target="_blank">AMA – Associação de Amigos do Autista</a></strong><br>
-            Referência nacional em atendimento, formação e defesa dos direitos das pessoas com TEA.</li>
+    <!-- Direitos Legais -->
+    <section id="legais" class="recursos-legais">
+      <div class="container">
+        <h2><i class="fas fa-gavel"></i> Direitos Legais</h2>
+        
+        <div class="leis-grid">
+          <div class="lei-card">
+            <h3>Lei Berenice Piana (12.764/2012)</h3>
+            <p><strong>Política Nacional de Proteção dos Direitos da Pessoa com TEA</strong></p>
+            <ul>
+              <li>Reconhece o autista como pessoa com deficiência</li>
+              <li>Garante acesso à saúde, educação e trabalho</li>
+              <li>Assegura atendimento multiprofissional</li>
+            </ul>
+          </div>
 
-        <li><strong><a href="https://autismoerealidade.org.br" target="_blank">Autismo e Realidade</a></strong><br>
-            Promove conscientização, informação científica e apoio a famílias e profissionais.</li>
+          <div class="lei-card">
+            <h3>Lei Romeo Mion (13.977/2020)</h3>
+            <p><strong>Carteira de Identificação da Pessoa com TEA (CIPTEA)</strong></p>
+            <ul>
+              <li>Identificação gratuita em todo território nacional</li>
+              <li>Atendimento prioritário em serviços públicos e privados</li>
+              <li>Facilita acesso a direitos e benefícios</li>
+            </ul>
+          </div>
 
-        <li><strong><a href="https://institutoneurosaber.com.br" target="_blank">Instituto NeuroSaber</a></strong><br>
-            Plataforma educativa com conteúdos sobre neurodesenvolvimento e inclusão escolar.</li>
-      </ul>
+          <div class="lei-card">
+            <h3>Benefícios Sociais</h3>
+            <p><strong>Direitos Previdenciários e Assistenciais</strong></p>
+            <ul>
+              <li>BPC-LOAS para pessoas com deficiência</li>
+              <li>Isenção de impostos na compra de veículos</li>
+              <li>Passe livre interestadual</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="leis">
-      <h3>Leis e Direitos</h3>
-      <p>O Brasil possui diversas leis que garantem direitos às pessoas com TEA. Algumas das principais são:</p>
-      <ul>
-        <li><strong>Lei nº 12.764/2012</strong> – Institui a Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista.</li>
-        <li><strong>Lei nº 13.146/2015</strong> – Estatuto da Pessoa com Deficiência (Lei Brasileira de Inclusão).</li>
-        <li><strong>Lei nº 8.069/1990</strong> – Estatuto da Criança e do Adolescente (ECA), que assegura o direito à educação e proteção integral.</li>
-      </ul>
+    <!-- Recursos de Saúde -->
+    <section id="saude" class="recursos-saude">
+      <div class="container">
+        <h2><i class="fas fa-stethoscope"></i> Saúde e Terapias</h2>
+        
+        <div class="saude-content">
+          <div class="profissionais-lista">
+            <h3>Profissionais Especializados</h3>
+            <div class="profissional-item">
+              <h4>Neuropediatra</h4>
+              <p>Diagnóstico e acompanhamento médico</p>
+            </div>
+            <div class="profissional-item">
+              <h4>Psiquiatra Infantil</h4>
+              <p>Avaliação e tratamento medicamentoso</p>
+            </div>
+            <div class="profissional-item">
+              <h4>Terapeuta Ocupacional</h4>
+              <p>Desenvolvimento de habilidades funcionais</p>
+            </div>
+            <div class="profissional-item">
+              <h4>Fonoaudiólogo</h4>
+              <p>Desenvolvimento da comunicação</p>
+            </div>
+            <div class="profissional-item">
+              <h4>Psicólogo</h4>
+              <p>Apoio emocional e desenvolvimento social</p>
+            </div>
+          </div>
+
+          <div class="terapias-lista">
+            <h3>Terapias e Intervenções</h3>
+            <div class="terapia-item">
+              <h4>ABA (Análise do Comportamento Aplicada)</h4>
+              <p>Intervenção comportamental intensiva</p>
+            </div>
+            <div class="terapia-item">
+              <h4>TEACCH</h4>
+              <p>Estruturação visual e organização</p>
+            </div>
+            <div class="terapia-item">
+              <h4>Integração Sensorial</h4>
+              <p>Manejo de questões sensoriais</p>
+            </div>
+            <div class="terapia-item">
+              <h4>Comunicação Alternativa</h4>
+              <p>PECS, linguagem de sinais, tecnologia assistiva</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="materiais">
-      <h3>Materiais Educativos</h3>
-      <p>Alguns conteúdos e guias gratuitos para ampliar o conhecimento sobre o autismo:</p>
-      <ul>
-        <li><a href="https://www.unicef.org/brazil/relatorio-autismo" target="_blank">Relatório UNICEF sobre Autismo no Brasil</a></li>
-        <li><a href="https://www.paho.org/pt/topicos/transtorno-espectro-autista" target="_blank">Informações da Organização Pan-Americana da Saúde (OPAS)</a></li>
-        <li><a href="https://educaautismo.com.br" target="_blank">Educa Autismo – materiais pedagógicos e informativos</a></li>
-      </ul>
+    <!-- Recursos Educacionais -->
+    <section id="educacao" class="recursos-educacao">
+      <div class="container">
+        <h2><i class="fas fa-graduation-cap"></i> Educação Inclusiva</h2>
+        
+        <div class="educacao-grid">
+          <div class="educacao-item">
+            <h3>Adaptações em Sala de Aula</h3>
+            <ul>
+              <li>Agenda visual individual</li>
+              <li>Ambiente estruturado e previsível</li>
+              <li>Material concreto e visual</li>
+              <li>Intervalos sensoriais</li>
+              <li>Antecipação de mudanças</li>
+            </ul>
+          </div>
+
+          <div class="educacao-item">
+            <h3>Tecnologia Assistiva</h3>
+            <ul>
+              <li>Comunicadores digitais</li>
+              <li>Aplicativos de organização</li>
+              <li>Software de previsibilidade</li>
+              <li>Recursos de acessibilidade</li>
+            </ul>
+          </div>
+
+          <div class="educacao-item">
+            <h3>Avaliação Adaptada</h3>
+            <ul>
+              <li>Provas com tempo estendido</li>
+              <li>Avaliação em ambiente separado</li>
+              <li>Questões objetivas e claras</li>
+              <li>Uso de recursos visuais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="mensagem-final">
-      <blockquote>
-        “Informar é transformar. Quando conhecemos, entendemos e acolhemos melhor.” 💙
-      </blockquote>
-      <div class="cta">
-        <a href="sobre.html" class="botao">Conheça o Projeto</a>
+    <!-- Instituições de Apoio -->
+    <section id="apoio" class="instituicoes-apoio">
+      <div class="container">
+        <h2><i class="fas fa-hands-helping"></i> Instituições de Apoio</h2>
+        
+        <div class="instituicoes-lista">
+          <div class="instituicao-card">
+            <h3>AMA - Associação de Amigos do Autista</h3>
+            <p><strong>Atuação:</strong> Nacional</p>
+            <p><strong>Serviços:</strong> Escolas especializadas, diagnóstico, terapias</p>
+            <a href="#" class="botao pequeno">Visitar site</a>
+          </div>
+
+          <div class="instituicao-card">
+            <h3>Instituto Autismo & Vida</h3>
+            <p><strong>Atuação:</strong> Nacional</p>
+            <p><strong>Serviços:</strong> Capacitação, informação, advocacy</p>
+            <a href="#" class="botao pequeno">Visitar site</a>
+          </div>
+
+          <div class="instituicao-card">
+            <h3>REATE - Rede de Apoio ao Autismo</h3>
+            <p><strong>Atuação:</strong> Regional</p>
+            <p><strong>Serviços:</strong> Grupos de apoio, orientação familiar</p>
+            <a href="#" class="botao pequeno">Visitar site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materiais para Download -->
+    <section class="materiais-download">
+      <div class="container">
+        <h2>Materiais para Download</h2>
+        
+        <div class="materiais-grid">
+          <div class="material-item">
+            <i class="fas fa-file-pdf"></i>
+            <h3>Guia de Direitos</h3>
+            <p>Cartilha completa sobre direitos da pessoa autista</p>
+            <a href="#" class="botao pequeno">Download PDF</a>
+          </div>
+
+          <div class="material-item">
+            <i class="fas fa-images"></i>
+            <h3>Pictogramas</h3>
+            <p>Kit de comunicação visual para imprimir</p>
+            <a href="#" class="botao pequeno">Download ZIP</a>
+          </div>
+
+          <div class="material-item">
+            <i class="fas fa-book"></i>
+            <h3>Histórias Sociais</h3>
+            <p>Modelos prontos para situações do dia a dia</p>
+            <a href="#" class="botao pequeno">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links Úteis -->
+    <section class="links-uteis">
+      <div class="container">
+        <h2>Links Úteis</h2>
+        
+        <div class="links-grid">
+          <div class="link-categoria">
+            <h3>Órgãos Oficiais</h3>
+            <ul>
+              <li><a href="#">Ministério da Saúde</a></li>
+              <li><a href="#">Ministério da Educação</a></li>
+              <li><a href="#">Secretaria de Direitos Humanos</a></li>
+            </ul>
+          </div>
+
+          <div class="link-categoria">
+            <h3>Associações Internacionais</h3>
+            <ul>
+              <li><a href="#">Autism Speaks</a></li>
+              <li><a href="#">National Autistic Society</a></li>
+              <li><a href="#">Autism Research Institute</a></li>
+            </ul>
+          </div>
+
+          <div class="link-categoria">
+            <h3>Blogs e Comunidades</h3>
+            <ul>
+              <li><a href="#">Mundo Autista</a></li>
+              <li><a href="#">Autismo e Realidade</a></li>
+              <li><a href="#">Neurodivergentes</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Rodapé -->
   <footer>
-    <p>© 2025 Neuroviva | Projeto escolar de conscientização sobre o autismo</p>
-    <p><a href="politica.html">Política de privacidade</a></p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Neuroviva</h3>
+          <p>Promovendo conscientização, inclusão e respeito ao autismo.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="o-que-e.html">O que é Autismo?</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 Neuroviva | Projeto escolar de conscientização sobre o autismo</p>
+        <p><a href="politica.html">Política de privacidade</a></p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
