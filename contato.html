@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Cabeçalho -->
   <header>
@@ -86,8 +88,9 @@
         <div class="form-container">
           <div class="form-info">
             <h2>Envie Sua Mensagem</h2>
-            <p>Tem dúvidas, sugestões ou quer colaborar com nosso projeto? Preencha o formulário abaixo que retornaremos o mais breve possível.</p>
-            
+            <p>Tem dúvidas, sugestões ou quer colaborar com nosso projeto? Preencha o formulário abaixo que retornaremos
+              o mais breve possível.</p>
+
             <div class="info-destaque">
               <h3><i class="fas fa-clock"></i> Tempo de Resposta</h3>
               <p>E-mails: 24-48 horas</p>
@@ -105,22 +108,27 @@
             </div>
           </div>
 
-          <form class="form-contato" id="formContato">
+          <!-- FORMULÁRIO FORMSPREE -->
+          <form class="form-contato" action="https://formspree.io/f/xgvpgyld" method="POST" id="formContato">
+            <!-- Campo Nome -->
             <div class="form-group">
               <label for="nome">Nome Completo *</label>
               <input type="text" id="nome" name="nome" required>
             </div>
 
+            <!-- Campo Email -->
             <div class="form-group">
               <label for="email">E-mail *</label>
               <input type="email" id="email" name="email" required>
             </div>
 
+            <!-- Campo Telefone -->
             <div class="form-group">
               <label for="telefone">Telefone</label>
               <input type="tel" id="telefone" name="telefone">
             </div>
 
+            <!-- Campo Assunto -->
             <div class="form-group">
               <label for="assunto">Assunto *</label>
               <select id="assunto" name="assunto" required>
@@ -133,15 +141,23 @@
               </select>
             </div>
 
+            <!-- Campo Mensagem -->
             <div class="form-group">
               <label for="mensagem">Mensagem *</label>
-              <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Descreva sua dúvida, sugestão ou proposta..."></textarea>
+              <textarea id="mensagem" name="mensagem" rows="6" required
+                placeholder="Descreva sua dúvida, sugestão ou proposta..."></textarea>
             </div>
 
+            <!-- Newsletter -->
             <div class="form-group checkbox-group">
-              <input type="checkbox" id="newsletter" name="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter" value="sim">
               <label for="newsletter">Desejo receber novidades e atualizações do Neuroviva</label>
             </div>
+
+            <!-- Campos ocultos do Formspree -->
+            <input type="hidden" name="_subject" value="Novo contato do Neuroviva">
+            <input type="hidden" name="_replyto" value="contato@neuroviva.org">
+            <input type="text" name="_gotcha" style="display:none">
 
             <button type="submit" class="botao enviar">Enviar Mensagem</button>
           </form>
@@ -160,7 +176,9 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-resposta">
-              <p>Estamos sempre abertos a novos voluntários! Você pode se candidatar através do formulário de contato selecionando a opção "Quero ser voluntário". Precisamos de ajuda em diversas áreas: pesquisa, redação, design, desenvolvimento web e divulgação.</p>
+              <p>Estamos sempre abertos a novos voluntários! Você pode se candidatar através do formulário de contato
+                selecionando a opção "Quero ser voluntário". Precisamos de ajuda em diversas áreas: pesquisa, redação,
+                design, desenvolvimento web e divulgação.</p>
             </div>
           </div>
 
@@ -170,7 +188,9 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-resposta">
-              <p>Não oferecemos atendimento psicológico direto, mas podemos indicar profissionais especializados e instituições parceiras. Somos um projeto de informação e conscientização, não uma clínica ou serviço de saúde.</p>
+              <p>Não oferecemos atendimento psicológico direto, mas podemos indicar profissionais especializados e
+                instituições parceiras. Somos um projeto de informação e conscientização, não uma clínica ou serviço de
+                saúde.</p>
             </div>
           </div>
 
@@ -180,7 +200,8 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-resposta">
-              <p>Sim, desde que citada a fonte e mantido o link para o site original. Todo nosso conteúdo é livre para compartilhamento, desde que usado para fins educativos e não comerciais.</p>
+              <p>Sim, desde que citada a fonte e mantido o link para o site original. Todo nosso conteúdo é livre para
+                compartilhamento, desde que usado para fins educativos e não comerciais.</p>
             </div>
           </div>
 
@@ -190,7 +211,8 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-resposta">
-              <p>Adoramos sugestões! Use o formulário de contato selecionando "Sugestão de recurso". Todas as sugestões são analisadas pela nossa equipe e implementadas quando possível.</p>
+              <p>Adoramos sugestões! Use o formulário de contato selecionando "Sugestão de recurso". Todas as sugestões
+                são analisadas pela nossa equipe e implementadas quando possível.</p>
             </div>
           </div>
         </div>
@@ -262,7 +284,7 @@
           <h3>Neuroviva</h3>
           <p>Promovendo conscientização, inclusão e respeito ao autismo.</p>
         </div>
-        
+
         <div class="footer-section">
           <h3>Links Rápidos</h3>
           <ul>
@@ -273,7 +295,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>© 2025 Neuroviva | Projeto escolar de conscientização sobre o autismo</p>
         <p><a href="politica.html">Política de privacidade</a></p>
@@ -287,25 +309,43 @@
       button.addEventListener('click', () => {
         const faqItem = button.parentElement;
         const resposta = button.nextElementSibling;
-        
+
         // Fecha todas as outras
         document.querySelectorAll('.faq-item').forEach(item => {
           if (item !== faqItem) {
             item.classList.remove('active');
           }
         });
-        
+
         // Alterna o atual
         faqItem.classList.toggle('active');
       });
     });
 
-    // Form submission
-    document.getElementById('formContato').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Mensagem enviada com sucesso! Retornaremos em breve.');
-      this.reset();
+    // Formspree Submission com Loading State
+    document.getElementById('formContato').addEventListener('submit', function (e) {
+      const btn = this.querySelector('.botao.enviar');
+      const originalText = btn.textContent;
+
+      // Mostrar estado de loading
+      btn.classList.add('loading');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+
+      // O Formspree cuida do envio, então mantemos o estado por 3 segundos
+      setTimeout(() => {
+        btn.classList.remove('loading');
+        btn.disabled = false;
+        btn.textContent = originalText;
+
+        // Mostrar mensagem de sucesso
+        alert('Mensagem enviada com sucesso! Retornaremos em breve.');
+
+        // Limpar formulário
+        this.reset();
+      }, 3000);
     });
   </script>
 </body>
+
 </html>
