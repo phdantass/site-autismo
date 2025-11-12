@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* CONFIGURAÇÕES GERAIS */
 body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -1930,6 +1934,10 @@ footer {
   font-weight: normal;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.imagem-destaque img{
+  height: 350px;
 }
 
 .botao.enviar {
